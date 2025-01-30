@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  canvas {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  
+ /* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the buttons */
+  align-items: center; /* Vertically centers the buttons */
+  height: 100vh; /* Full screen height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Style the buttons */
+button {
+  background-color: white; /* White background */
+  color: #333; /* Dark gray text for contrast */
+  padding: 15px 32px; /* Add more padding for larger buttons */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid whitesmoke; /* Green border */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: rgb(151, 148, 148);
+  color: white; /* White text on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: translateY(-3px); /* Slightly lift the button */
+}
+
+/* Active (clicked) button effect */
+button:active {
+  background-color: whitesmoke; /* Darker green when clicked */
+  color: white; /* Ensure text stays white when clicked */
+  transform: translateY(1px); /* Button presses down when clicked */
+}
+
+/* Focus (when button is focused) */
+button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); /* Add focus outline */
+}
